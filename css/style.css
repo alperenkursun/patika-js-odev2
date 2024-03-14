@@ -59,7 +59,6 @@ ul li.checked::before {
 .close:hover {
   background-color: #f78501;
   color: white;
-
 }
 
 .header {
@@ -104,4 +103,24 @@ input {
 
 .button:hover {
   background-color: #bbb;
+}
+
+.delete_button {
+  right: 20px;
+  top: 50%;
+  color: grey;
+  transform: translateY(-50%);
+}
+
+.check_icon {
+  left: 20px;
+  top: 50%;
+  color: grey;
+  transform: translateY(-50%);
+}
+
+.todo_item_active {
+  background-color: rgb(32, 102, 112) !important;
+  text-decoration: line-through;
+  color: white !important;
 }
