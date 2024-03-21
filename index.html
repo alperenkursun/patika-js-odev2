@@ -17,7 +17,7 @@
     <div class="mr-1" style="position: relative">
       <div style="position: absolute; top: 0; right: 0">
         <div
-          id="liveToast"
+          id="liveToast1"
           class="toast success hide"
           role="alert"
           aria-live="assertive"
@@ -41,7 +41,7 @@
     <div class="mr-1" style="position: relative">
       <div style="position: absolute; top: 0; right: 0">
         <div
-          id="liveToast"
+          id="liveToast2"
           class="toast error hide"
           role="alert"
           aria-live="assertive"
@@ -76,20 +76,15 @@
           placeholder="Bugün ne yapacaksın?"
           onchange="handleValue()"
         />
-        <span onclick="newElement()" id="liveToastBtn" class="button"
+        <span
+          id="toastButton"
+          onclick="newElement()"
+          id="liveToastBtn"
+          class="button"
           >Ekle</span
         >
       </div>
-
-      <ul id="list">
-        <li id="54646546" class="position-relative todo_item_active">
-          <i class="fa-solid fa-xmark position-absolute delete_button"></i>
-          asldkasldk lkdasldksaldk
-          <i
-            class="fa-solid fa-check text-white position-absolute check_icon"
-          ></i>
-        </li>
-      </ul>
+      <ul id="list"></ul>
       <script
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
